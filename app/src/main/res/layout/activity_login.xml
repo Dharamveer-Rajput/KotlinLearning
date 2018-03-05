@@ -5,23 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".firebaselogin.MainActivity">
+    tools:context=".firebaselogin.LoginActivity">
 
-    <TextView
-        android:id="@+id/nameTextView"
+
+    <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="name"
-        />
-    <TextView
-        android:id="@+id/statusTextView"
+        android:hint="email"/>
+    <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="status"/>
+        android:hint="password"
+        android:inputType="textPassword"/>
     <Button
-        android:id="@+id/singoutButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="logout" />
-
+        android:text="Login"/>
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register"/>
 </LinearLayout>
