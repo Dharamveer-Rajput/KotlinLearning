@@ -4,8 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
-
     <application
         android:name=".keditbysteps.KedditApp"
         android:allowBackup="true"
@@ -14,26 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".firebaselogin.MainActivity">
-
-        </activity>
-
+        <activity android:name=".firebaselogin.MainActivity"></activity>
         <activity android:name=".firebaselogin.LoginActivity" />
-        <activity android:name=".firebaselogin.RegisterActivity"></activity>
+        <activity android:name=".firebaselogin.RegisterActivity" />
+        <activity android:name=".recyclerview.RecyclerviewMain"></activity>
 
-        <activity android:name=".recyclerview.RecyclerviewMain">
+        <activity
+            android:name=".keditbysteps.KedditMainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".mvparchitecture.ui.post.PostActivity">
+
         </activity>
-
-
-        <activity android:name=".keditbysteps.KedditMainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
+        <activity android:name=".soap_sample.MainSoapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

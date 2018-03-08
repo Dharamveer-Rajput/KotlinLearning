@@ -7,6 +7,11 @@
     <string name="last_name">Last Name</string>
     <string name="login_title">Login</string>
     <string name="create_act">Create Account</string>
+    <string name="unknown_error">An error is occured</string>
 
+
+    <string name="edit_text_hint">Enter country here</string>
+    <string name="search_button_text">Search for major cities</string>
+    <string name="no_data_text">No cities found</string>
 
 </resources>
