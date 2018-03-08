@@ -47,6 +47,7 @@ class PostAdapter(private val context: Context) : RecyclerView.Adapter<PostAdapt
      * Updates the list of posts of the adapter
      * @param posts the new list of posts of the adapter
      */
+
     fun updatePosts(posts: List<Post>) {
         this.posts = posts
         notifyDataSetChanged()
