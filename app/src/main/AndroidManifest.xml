@@ -19,30 +19,19 @@
         <activity
             android:name=".keditbysteps.KedditMainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".mvparchitecture.ui.post.PostActivity"></activity>
-        <activity android:name=".soap_sample.MainSoapActivity">
-
-        </activity>
-
-        <activity android:name=".KotlinTest">
-
-
-        </activity>
-
-
-        <activity android:name=".KotlinTest2">
-
-        </activity>
-
+        <activity android:name=".mvparchitecture.ui.post.PostActivity" />
+        <activity android:name=".KotlinTest"></activity>
+        <activity android:name=".KotlinTest2"></activity>
         <activity android:name=".kotlin_calculator.KotlinCalculator">
 
+        </activity>
+        <activity android:name=".layout_learning.LayoutLearning">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
