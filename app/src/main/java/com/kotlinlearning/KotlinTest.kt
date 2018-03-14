@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.kotlin_test_layout.*
+import java.util.*
 
 
 class KotlinTest : AppCompatActivity() {
@@ -31,7 +32,7 @@ class KotlinTest : AppCompatActivity() {
 
         val result = age * 5 / 4
 
-        println(result)
+       // println(result)
 
 
         //Only interger
@@ -48,7 +49,7 @@ class KotlinTest : AppCompatActivity() {
 
         val myResult = myAge * 5/4
 
-        println(myResult)
+      //  println(myResult)
 
 
         //String
@@ -57,7 +58,7 @@ class KotlinTest : AppCompatActivity() {
         val  surname = "rajput"
 
         val fullname  = names+ " " +surname
-        println(fullname)
+      //  println(fullname)
 
 
         val myName : String  = "Dharam"
@@ -78,14 +79,54 @@ class KotlinTest : AppCompatActivity() {
         myArray[2] = "Kirk"
         myArray[3] = "Rob"
 
-        println(myArray[2])
+     //   println(myArray[2])
 
 
 
         val myNumberArray = intArrayOf(10,20,30,40,50,60)
         println(myNumberArray.size)
         myNumberArray.set(2,25)
-        println(myNumberArray[2])
+     //   println(myNumberArray[2])
+
+
+
+        //List
+        val myMusician = ArrayList<String>()
+
+        myMusician.add("Dharam")
+        myMusician.add("Rajput")
+
+     //   println(myMusician)
+
+
+        myMusician.add(1,"Kirk")
+        println(myMusician)
+
+        myMusician.removeAt(1)
+     //   println(myMusician)
+
+
+
+        //Sets
+
+        val mySet = HashSet<String>()
+
+        mySet.add("Kirk")
+        mySet.add("Kirk")
+
+      //  println(mySet.size)
+
+
+        //Map
+        //Kind of arrays.
+        //One value and one key.
+
+        val myHashMap = HashMap<String, String>()
+
+        myHashMap.put("name","James")
+        myHashMap.put("instrument","Guitar")
+
+      //  println(myHashMap["instrument"])
 
 
 
