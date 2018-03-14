@@ -129,8 +129,104 @@ class KotlinTest : AppCompatActivity() {
       //  println(myHashMap["instrument"])
 
 
+        //Operators
+
+        var m = 5
+       // println(m)
+        m = m + 1
+      //  println(m)
+        m++
+       // println(m)
+        m--
+       // println(m)
 
 
+        var n = 10
+
+
+      //  println(m>n)
+      //  println(n>m)
+
+
+        /*
+        >
+        <
+        >=
+        <=
+        ==
+        !=
+        &&
+        ||
+         */
+
+        //if
+
+        if(m > n){
+          //  println("m is greater than n")
+        } else if( n > m){
+           // println("n is greater than m")
+        } else{
+           // println("m is equal to n")
+        }
+
+
+        //switch
+
+        val day = 1
+        var dayString = ""
+
+        if( day == 1)
+        {
+            dayString = "Monday"
+        } else if(day == 2){
+            dayString = "Tuesday"
+        } else if(day == 3){
+            dayString = "Wednesday"
+        }
+
+        when (day){
+
+            1 -> dayString = "Monday"
+            2 -> dayString = "Tuesday"
+            3 -> dayString = "Wednesday"
+            else ->dayString = "Sunday"
+        }
+
+      //  println(dayString)
+
+
+        //for loops
+        val myNumber = intArrayOf(12,15,18,21,24)
+
+        val q = myNumber[0] / 3 * 5
+        println(q)
+
+        for (number in myNumber) {
+            val z = number / 3 * 5
+            println(z)
+        }
+
+        for ( i in myNumber.indices) {
+            val y = myNumber[i] / 3 * 5
+            println(y)
+        }
+
+
+        for( a in 0..9) {
+            val b = a * 10
+            println(b)
+        }
+
+
+        //While loop
+
+        var j = 0
+
+        while (j<10){
+            val x = j * 10
+            println(x)
+            j++
+        }
     }
 
 
