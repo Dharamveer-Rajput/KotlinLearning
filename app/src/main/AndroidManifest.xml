@@ -20,12 +20,13 @@
             android:name=".keditbysteps.KedditMainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".mvparchitecture.ui.post.PostActivity" />
-        <activity android:name=".KotlinTest"></activity>
-        <activity android:name=".KotlinTest2"></activity>
-        <activity android:name=".kotlin_calculator.KotlinCalculator">
+        <activity android:name=".KotlinTest" />
+        <activity android:name=".KotlinTest2" />
+        <activity android:name=".kotlin_calculator.KotlinCalculator"></activity>
+        <activity android:name=".layout_learning.LayoutLearning">
 
         </activity>
-        <activity android:name=".layout_learning.LayoutLearning">
+        <activity android:name=".StoreKotlinData.StoreKotlinData">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
