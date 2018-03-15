@@ -13,5 +13,11 @@
     <string name="edit_text_hint">Enter country here</string>
     <string name="search_button_text">Search for major cities</string>
     <string name="no_data_text">No cities found</string>
+    <string name="title_activity_kotlin_app">KotlinAppActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 </resources>

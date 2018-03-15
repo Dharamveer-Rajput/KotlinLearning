@@ -26,11 +26,16 @@
         <activity android:name=".layout_learning.LayoutLearning" />
         <activity android:name=".StoreKotlinData.StoreKotlinData" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".timers.KotlinTimers"></activity>
-        <activity android:name=".runnables.RunnableKotlin">
+        <activity android:name=".timers.KotlinTimers" />
+        <activity android:name=".runnables.RunnableKotlin" />
+        <activity android:name=".alertDialogs.AlertDialogs"></activity>
+        <activity android:name=".kotlingame.KotlinGame">
 
         </activity>
-        <activity android:name=".alertDialogs.AlertDialogs">
+        <activity
+            android:name=".kotlinApp.KotlinAppActivity"
+            android:label="@string/title_activity_kotlin_app"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
