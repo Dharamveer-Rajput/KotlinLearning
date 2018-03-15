@@ -22,11 +22,15 @@
         <activity android:name=".mvparchitecture.ui.post.PostActivity" />
         <activity android:name=".KotlinTest" />
         <activity android:name=".KotlinTest2" />
-        <activity android:name=".kotlin_calculator.KotlinCalculator"></activity>
-        <activity android:name=".layout_learning.LayoutLearning">
+        <activity android:name=".kotlin_calculator.KotlinCalculator" />
+        <activity android:name=".layout_learning.LayoutLearning" />
+        <activity android:name=".StoreKotlinData.StoreKotlinData" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".timers.KotlinTimers"></activity>
+        <activity android:name=".runnables.RunnableKotlin">
 
         </activity>
-        <activity android:name=".StoreKotlinData.StoreKotlinData">
+        <activity android:name=".alertDialogs.AlertDialogs">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

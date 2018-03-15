@@ -1,5 +1,6 @@
 package com.kotlinlearning
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -14,6 +15,8 @@ class KotlinTest : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.kotlin_test_layout)
+
+
 
 
         //variables
@@ -229,6 +232,14 @@ class KotlinTest : AppCompatActivity() {
         }
     }
 
+    fun changeActivity(view: View){
+
+        val intent = Intent(applicationContext,SecondActivity::class.java)
+
+        intent.putExtra("input",editText.text.toString())
+
+        startActivity(intent)
+    }
 
 
 }
