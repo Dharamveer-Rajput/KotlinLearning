@@ -1,4 +1,4 @@
-package com.kotlinlearning.kotlinApp
+package com.kotlinlearning.navigationDrawer
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
@@ -9,14 +9,14 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.kotlinlearning.R
-import kotlinx.android.synthetic.main.activity_kotlin_app.*
-import kotlinx.android.synthetic.main.app_bar_kotlin_app.*
+import kotlinx.android.synthetic.main.activity_navigation_drawer.*
+import kotlinx.android.synthetic.main.app_bar_navigation_drawer.*
 
-class KotlinAppActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_kotlin_app)
+        setContentView(R.layout.activity_navigation_drawer)
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
@@ -42,7 +42,7 @@ class KotlinAppActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.kotlin_app, menu)
+        menuInflater.inflate(R.menu.navigation_drawer, menu)
         return true
     }
 

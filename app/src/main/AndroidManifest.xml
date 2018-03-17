@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:name=".keditbysteps.KedditApp"
         android:allowBackup="true"
@@ -28,14 +33,40 @@
         <activity android:name=".SecondActivity" />
         <activity android:name=".timers.KotlinTimers" />
         <activity android:name=".runnables.RunnableKotlin" />
-        <activity android:name=".alertDialogs.AlertDialogs"></activity>
-        <activity android:name=".kotlingame.KotlinGame">
+        <activity android:name=".alertDialogs.AlertDialogs" />
+        <activity android:name=".kotlingame.KotlinGame" />
+        <activity
+            android:name=".kotlinApp.MainActivity"
+            android:label="@string/title_activity_kotlin_app"
+            android:theme="@style/AppTheme">
 
         </activity>
         <activity
-            android:name=".kotlinApp.KotlinAppActivity"
-            android:label="@string/title_activity_kotlin_app"
-            android:theme="@style/AppTheme">
+            android:name=".navigationDrawer.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".kotlinApp.CapturedImagesActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".kotlinApp.LoginActivity"
+            android:label="@string/title_activity_login" >
+
+        </activity>
+
+
+        <activity android:name=".kotlinApp.LoginMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
